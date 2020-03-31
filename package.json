@@ -43,5 +43,13 @@
   },
   "optionalDependencies": {
     "typescript": "3.5.2"
-  }
+  },
+  "keywords": [
+    "now",
+    "now.sh",
+    "zeit",
+    "express",
+    "create-react-app",
+    "react"
+  ]
 }
