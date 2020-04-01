@@ -44,31 +44,34 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/daniel-olahh.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/practicing.png") + ")"
         }}
-        className="page-header"
+        className='page-header'
         data-parallax={true}
         ref={pageHeader}
       >
-        <div className="filter" />
+        <div className='filter' />
         <Container>
-          <div className="motto text-center">
-            <h1>Example page</h1>
-            <h3>Start designing your landing page here.</h3>
+          <div className='motto text-center'>
+            <h1>Practicify</h1>
+            <h3>
+              Our goal is to get you from A to B in a fast and practice
+              enviroment.
+            </h3>
             <br />
             <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              className="btn-round mr-1"
-              color="neutral"
-              target="_blank"
+              href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+              className='btn-round mr-1'
+              color='neutral'
+              target='_blank'
               outline
             >
-              <i className="fa fa-play" />
+              <i className='fa fa-play' />
               Watch video
             </Button>
-            <Button className="btn-round" color="neutral" type="button" outline>
+            {/* <Button className="btn-round" color="neutral" type="button" outline>
               Download
-            </Button>
+            </Button> */}
           </div>
         </Container>
       </div>

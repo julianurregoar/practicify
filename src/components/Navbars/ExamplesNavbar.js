@@ -65,19 +65,19 @@ function ExamplesNavbar() {
   return (
     <Navbar
       className={classnames("fixed-top", navbarColor)}
-      color-on-scroll="300"
-      expand="lg"
+      color-on-scroll='300'
+      expand='lg'
     >
       <Container>
-        <div className="navbar-translate">
+        <div className='navbar-translate'>
           <NavbarBrand
-            data-placement="bottom"
-            to="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
+            data-placement='bottom'
+            to='/index'
+            target='_blank'
+            title='Coded by Creative Tim'
             tag={Link}
           >
-            Paper Kit 2
+            Practicify
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -86,72 +86,73 @@ function ExamplesNavbar() {
             })}
             onClick={toggleNavbarCollapse}
           >
-            <span className="navbar-toggler-bar bar1" />
-            <span className="navbar-toggler-bar bar2" />
-            <span className="navbar-toggler-bar bar3" />
+            <span className='navbar-toggler-bar bar1' />
+            <span className='navbar-toggler-bar bar2' />
+            <span className='navbar-toggler-bar bar3' />
           </button>
         </div>
         <Collapse
-          className="justify-content-end"
+          className='justify-content-end'
           navbar
           isOpen={navbarCollapse}
         >
           <Nav navbar>
             <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
+              <NavLink>
+                <i className='nc-icon nc-layout-11' />
+                <a href='#services'>Practice</a>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
-                target="_blank"
+                href='https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar'
+                target='_blank'
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
+                <i className='nc-icon nc-book-bookmark' /> Documentation
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Follow us on Twitter"
+                data-placement='bottom'
+                href='https://twitter.com/CreativeTim?ref=creativetim'
+                target='_blank'
+                title='Follow us on Twitter'
               >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
+                <i className='fa fa-twitter' />
+                <p className='d-lg-none'>Twitter</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Like us on Facebook"
+                data-placement='bottom'
+                href='https://www.facebook.com/CreativeTim?ref=creativetim'
+                target='_blank'
+                title='Like us on Facebook'
               >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
+                <i className='fa fa-facebook-square' />
+                <p className='d-lg-none'>Facebook</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Follow us on Instagram"
+                data-placement='bottom'
+                href='https://www.instagram.com/CreativeTimOfficial?ref=creativetim'
+                target='_blank'
+                title='Follow us on Instagram'
               >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
+                <i className='fa fa-instagram' />
+                <p className='d-lg-none'>Instagram</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Star on GitHub"
+                data-placement='bottom'
+                href='https://www.github.com/CreativeTimOfficial?ref=creativetim'
+                target='_blank'
+                title='Star on GitHub'
               >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
+                <i className='fa fa-github' />
+                <p className='d-lg-none'>GitHub</p>
               </NavLink>
             </NavItem>
           </Nav>
