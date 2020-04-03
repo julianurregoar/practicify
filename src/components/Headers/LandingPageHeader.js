@@ -44,30 +44,39 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/practicing.png") + ")"
+          backgroundImage: "url(" + require("assets/img/MainPage1.jpeg") + ")"
         }}
         className='page-header'
         data-parallax={true}
         ref={pageHeader}
       >
-        <div className='filter' />
+        <div />
         <Container>
-          <div className='motto text-center'>
-            <h1>Practicify</h1>
-            <h3>
+          <div className='motto text-center '>
+            <img
+              src={require("assets/img/P_logo.png")}
+              alt=''
+              // width='120'
+              // height='80'
+              className='d-inline-block align-top mr0 p0 '
+            />
+
+            <h2 style={{ color: "black" }}>
+              <strong>Education online</strong>{" "}
+            </h2>
+            <h3 style={{ color: "black" }}>
               Our goal is to get you from A to B in a fast and practice
               enviroment.
             </h3>
+
             <br />
             <Button
-              href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+              href='#services'
               className='btn-round mr-1'
               color='neutral'
-              target='_blank'
               outline
             >
-              <i className='fa fa-play' />
-              Watch video
+              Services
             </Button>
             {/* <Button className="btn-round" color="neutral" type="button" outline>
               Download

@@ -20,7 +20,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
-
 // reactstrap components
 import {
   Collapse,
@@ -62,6 +61,7 @@ function ExamplesNavbar() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
   return (
     <Navbar
       className={classnames("fixed-top", navbarColor)}
@@ -70,14 +70,18 @@ function ExamplesNavbar() {
     >
       <Container>
         <div className='navbar-translate'>
-          <NavbarBrand
-            data-placement='bottom'
-            to='/index'
-            target='_blank'
-            title='Coded by Creative Tim'
-            tag={Link}
-          >
-            Practicify
+          <NavbarBrand data-placement='bottom' to='/' tag={Link}>
+            <img
+              src={
+                navbarColor
+                  ? require("assets/img/P_text_white.png")
+                  : require("assets/img/P_text_red.png")
+              }
+              alt=''
+              width='120'
+              height='80'
+              className='d-inline-block align-top mr0 p0 '
+            />
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -98,61 +102,19 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink>
-                <i className='nc-icon nc-layout-11' />
-                <a href='#services'>Practice</a>
+              <NavLink href='#services'>
+                <i className='nc-icon nc-layout-11' /> Services
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                href='https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar'
-                target='_blank'
-              >
-                <i className='nc-icon nc-book-bookmark' /> Documentation
+              <NavLink href='#practicos'>
+                <i className='nc-icon nc-book-bookmark' /> Practicos
               </NavLink>
             </NavItem>
+
             <NavItem>
-              <NavLink
-                data-placement='bottom'
-                href='https://twitter.com/CreativeTim?ref=creativetim'
-                target='_blank'
-                title='Follow us on Twitter'
-              >
-                <i className='fa fa-twitter' />
-                <p className='d-lg-none'>Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement='bottom'
-                href='https://www.facebook.com/CreativeTim?ref=creativetim'
-                target='_blank'
-                title='Like us on Facebook'
-              >
-                <i className='fa fa-facebook-square' />
-                <p className='d-lg-none'>Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement='bottom'
-                href='https://www.instagram.com/CreativeTimOfficial?ref=creativetim'
-                target='_blank'
-                title='Follow us on Instagram'
-              >
-                <i className='fa fa-instagram' />
-                <p className='d-lg-none'>Instagram</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement='bottom'
-                href='https://www.github.com/CreativeTimOfficial?ref=creativetim'
-                target='_blank'
-                title='Star on GitHub'
-              >
-                <i className='fa fa-github' />
-                <p className='d-lg-none'>GitHub</p>
+              <NavLink href='#contact'>
+                <i className='nc-icon nc-book-bookmark' /> Contact
               </NavLink>
             </NavItem>
           </Nav>

@@ -48,6 +48,7 @@ function LandingPage() {
       document.body.classList.remove("profile-page");
     };
   });
+
   return (
     <>
       <ExamplesNavbar />
@@ -57,19 +58,20 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className='ml-auto mr-auto' md='8'>
-                <h2 className='title'>Let's talk product</h2>
+                <h2 className='title'>Services</h2>
                 <h5 className='description'>
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                  We believe that the results come according to the time you
+                  dedicate to do it.{" "}
+                  <strong>
+                    Therefore, all of our courses and experiences have practice
+                    exercises.
+                  </strong>
                 </h5>
                 <br />
                 <Button
                   className='btn-round'
                   color='info'
-                  href='#pablo'
+                  href='#practicos'
                   onClick={e => e.preventDefault()}
                 >
                   See Details
@@ -79,24 +81,24 @@ function LandingPage() {
             <br />
             <br />
             <Row>
-              <Col md='3'>
+              <Col md='12'>
                 <div className='info'>
                   <div className='icon icon-info'>
                     <i className='nc-icon nc-album-2' />
                   </div>
                   <div className='description'>
-                    <h4 className='info-title'>Beautiful Gallery</h4>
+                    <h4 className='info-title'>Spanish Conversation</h4>
                     <p className='description'>
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
+                      You can choose what type of practice you want to improve
+                      your knowledges.
                     </p>
-                    <Button className='btn-link' color='info' href='#pablo'>
+                    <Button className='btn-link' color='info' href='#julian'>
                       See more
                     </Button>
                   </div>
                 </div>
               </Col>
-              <Col md='3'>
+              {/* <Col md='6'>
                 <div className='info'>
                   <div className='icon icon-info'>
                     <i className='nc-icon nc-bulb-63' />
@@ -107,13 +109,13 @@ function LandingPage() {
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.
                     </p>
-                    <Button className='btn-link' color='info' href='#pablo'>
+                    <Button className='btn-link' color='info' href='#julian'>
                       See more
                     </Button>
                   </div>
                 </div>
-              </Col>
-              <Col md='3'>
+              </Col> */}
+              {/* <Col md='3'>
                 <div className='info'>
                   <div className='icon icon-info'>
                     <i className='nc-icon nc-chart-bar-32' />
@@ -124,7 +126,7 @@ function LandingPage() {
                       Choose from a veriety of many colors resembling sugar
                       paper pastels.
                     </p>
-                    <Button className='btn-link' color='info' href='#pablo'>
+                    <Button className='btn-link' color='info' href='#julian'>
                       See more
                     </Button>
                   </div>
@@ -141,34 +143,35 @@ function LandingPage() {
                       Find unique and handmade delightful designs related items
                       directly from our sellers.
                     </p>
-                    <Button className='btn-link' color='info' href='#pablo'>
+                    <Button className='btn-link' color='info' href='#julian'>
                       See more
                     </Button>
                   </div>
                 </div>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>
         <div className='section section-dark text-center'>
           <Container>
-            <h2 className='title'>Let's talk about us</h2>
+            <h2 className='title'>Practicos</h2>
             <Row>
-              <Col md='4'>
+              <Col md='12'>
                 <Card className='card-profile card-plain'>
-                  <div className='card-avatar'>
-                    <a href='#pablo' onClick={e => e.preventDefault()}>
+                  <div className='card-avatar' id='practicos'>
+                    <a href='#julian' onClick={e => e.preventDefault()}>
                       <img
                         alt='...'
-                        src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
+                        src={require("assets/img/faces/Yo.jpeg")}
                       />
                     </a>
                   </div>
                   <CardBody>
-                    <a href='#pablo' onClick={e => e.preventDefault()}>
+                    <a href='#julian' onClick={e => e.preventDefault()}>
                       <div className='author'>
-                        <CardTitle tag='h4'>Henry Ford</CardTitle>
-                        <h6 className='card-category'>Product Manager</h6>
+                        <CardTitle tag='h4'>Julian Urrego</CardTitle>
+                        <h6 className='card-category'>From Colombia</h6>
+                        <h6 className='card-category'>Spanish Conversation</h6>
                       </div>
                     </a>
                     <p className='card-description text-center'>
@@ -181,7 +184,7 @@ function LandingPage() {
                     <Button
                       className='btn-just-icon btn-neutral'
                       color='link'
-                      href='#pablo'
+                      href='#julian'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-twitter' />
@@ -189,7 +192,7 @@ function LandingPage() {
                     <Button
                       className='btn-just-icon btn-neutral ml-1'
                       color='link'
-                      href='#pablo'
+                      href='#julian'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-google-plus' />
@@ -197,7 +200,7 @@ function LandingPage() {
                     <Button
                       className='btn-just-icon btn-neutral ml-1'
                       color='link'
-                      href='#pablo'
+                      href='#julian'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-linkedin' />
@@ -205,10 +208,10 @@ function LandingPage() {
                   </CardFooter>
                 </Card>
               </Col>
-              <Col md='4'>
+              {/* <Col md='4'>
                 <Card className='card-profile card-plain'>
                   <div className='card-avatar'>
-                    <a href='#pablo' onClick={e => e.preventDefault()}>
+                    <a href='#julian' onClick={e => e.preventDefault()}>
                       <img
                         alt='...'
                         src={require("assets/img/faces/joe-gardner-2.jpg")}
@@ -216,7 +219,7 @@ function LandingPage() {
                     </a>
                   </div>
                   <CardBody>
-                    <a href='#pablo' onClick={e => e.preventDefault()}>
+                    <a href='#julian' onClick={e => e.preventDefault()}>
                       <div className='author'>
                         <CardTitle tag='h4'>Sophie West</CardTitle>
                         <h6 className='card-category'>Designer</h6>
@@ -233,7 +236,7 @@ function LandingPage() {
                     <Button
                       className='btn-just-icon btn-neutral'
                       color='link'
-                      href='#pablo'
+                      href='#julian'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-twitter' />
@@ -241,7 +244,7 @@ function LandingPage() {
                     <Button
                       className='btn-just-icon btn-neutral ml-1'
                       color='link'
-                      href='#pablo'
+                      href='#julian'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-google-plus' />
@@ -249,7 +252,7 @@ function LandingPage() {
                     <Button
                       className='btn-just-icon btn-neutral ml-1'
                       color='link'
-                      href='#pablo'
+                      href='#julian'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-linkedin' />
@@ -260,7 +263,7 @@ function LandingPage() {
               <Col md='4'>
                 <Card className='card-profile card-plain'>
                   <div className='card-avatar'>
-                    <a href='#pablo' onClick={e => e.preventDefault()}>
+                    <a href='#julian' onClick={e => e.preventDefault()}>
                       <img
                         alt='...'
                         src={require("assets/img/faces/erik-lucatero-2.jpg")}
@@ -268,7 +271,7 @@ function LandingPage() {
                     </a>
                   </div>
                   <CardBody>
-                    <a href='#pablo' onClick={e => e.preventDefault()}>
+                    <a href='#julian' onClick={e => e.preventDefault()}>
                       <div className='author'>
                         <CardTitle tag='h4'>Robert Orben</CardTitle>
                         <h6 className='card-category'>Developer</h6>
@@ -285,7 +288,7 @@ function LandingPage() {
                     <Button
                       className='btn-just-icon btn-neutral'
                       color='link'
-                      href='#pablo'
+                      href='#julian'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-twitter' />
@@ -293,7 +296,7 @@ function LandingPage() {
                     <Button
                       className='btn-just-icon btn-neutral ml-1'
                       color='link'
-                      href='#pablo'
+                      href='#julian'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-google-plus' />
@@ -301,14 +304,14 @@ function LandingPage() {
                     <Button
                       className='btn-just-icon btn-neutral ml-1'
                       color='link'
-                      href='#pablo'
+                      href='#julian'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-linkedin' />
                     </Button>
                   </CardFooter>
                 </Card>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>
