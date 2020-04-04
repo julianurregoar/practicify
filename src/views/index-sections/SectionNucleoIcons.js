@@ -26,54 +26,51 @@ import { Button, Container, Row, Col } from "reactstrap";
 function SectionNucleoIcons() {
   return (
     <>
-      <div className="section section-dark section-nucleo-icons">
+      <div className='section section-nucleo-icons'>
         <Container>
           <Row>
-            <Col lg="6" md="12">
-              <h2 className="title">Nucleo Icons</h2>
+            <Col lg='6' md='12'>
+              <h2 className='title'>Why Practicify?</h2>
               <br />
-              <p className="description">
-                Paper Kit comes with 100 custom icons made by our friends from
-                NucleoApp. The official package contains over 2.100 thin icons
-                which are looking great in combination with Paper Kit Make sure
-                you check all of them and use those that you like the most.
+              <p className='description'>
+                We believe that the results come according to the time you
+                dedicate to do it.{" "}
+                <strong>
+                  Therefore, you'll practice a foreign lenguages 100% of the
+                  time you use Practicify!
+                </strong>
               </p>
               <br />
-              <Button
-                className="btn-round"
-                color="danger"
-                href="/nucleo-icons"
-                target="_blank"
-              >
-                View Demo Icons
+              <Button className='btn-round' color='danger' href='#practicos'>
+                How Works?
               </Button>
-              <Button
-                className="btn-round ml-1"
-                color="danger"
-                href="https://nucleoapp.com/?ref=1712"
+              {/* <Button
+                className='btn-round ml-1'
+                color='danger'
+                href='https://nucleoapp.com/?ref=1712'
                 outline
-                target="_blank"
+                target='_blank'
               >
                 View All Icons
-              </Button>
+              </Button> */}
             </Col>
-            <Col lg="6" md="12">
-              <div className="icons-container">
-                <i className="nc-icon nc-time-alarm" />
-                <i className="nc-icon nc-atom" />
-                <i className="nc-icon nc-camera-compact" />
-                <i className="nc-icon nc-watch-time" />
-                <i className="nc-icon nc-key-25" />
-                <i className="nc-icon nc-diamond" />
-                <i className="nc-icon nc-user-run" />
-                <i className="nc-icon nc-layout-11" />
-                <i className="nc-icon nc-badge" />
-                <i className="nc-icon nc-bulb-63" />
-                <i className="nc-icon nc-favourite-28" />
-                <i className="nc-icon nc-planet" />
-                <i className="nc-icon nc-tie-bow" />
-                <i className="nc-icon nc-zoom-split" />
-                <i className="nc-icon nc-cloud-download-93" />
+            <Col lg='6' md='12'>
+              <div className='icons-container'>
+                <i className='nc-icon nc-time-alarm' />
+                <i className='nc-icon nc-world-2' />
+                <i className='nc-icon nc-camera-compact' />
+                <i className='nc-icon nc-watch-time' />
+                <i className='nc-icon nc-key-25' />
+                <i className='nc-icon nc-single-02' />
+                <i className='nc-icon nc-user-run' />
+                <i className='nc-icon nc-layout-11' />
+                <i className='nc-icon nc-badge' />
+                <i className='nc-icon nc-bulb-63' />
+                <i className='nc-icon nc-favourite-28' />
+                <i className='nc-icon nc-planet' />
+                <i className='nc-icon nc-tie-bow' />
+                <i className='nc-icon nc-zoom-split' />
+                <i className='nc-icon nc-cloud-download-93' />
               </div>
             </Col>
           </Row>

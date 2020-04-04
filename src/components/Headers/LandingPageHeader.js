@@ -44,7 +44,7 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/MainPage1.jpeg") + ")"
+          backgroundImage: "url(" + require("assets/img/brain.png") + ")"
         }}
         className='page-header'
         data-parallax={true}
@@ -54,15 +54,15 @@ function LandingPageHeader() {
         <Container>
           <div className='motto text-center '>
             <img
-              src={require("assets/img/P_logo.png")}
+              src={require("assets/img/logo.png")}
               alt=''
-              // width='120'
-              // height='80'
+              width='120'
+              height='120'
               className='d-inline-block align-top mr0 p0 '
             />
 
             <h2 style={{ color: "black" }}>
-              <strong>Education online</strong>{" "}
+              <strong>Foreing Lenguages Conversation</strong>{" "}
             </h2>
             <h3 style={{ color: "black" }}>
               Our goal is to get you from A to B in a fast and practice
@@ -78,9 +78,6 @@ function LandingPageHeader() {
             >
               Services
             </Button>
-            {/* <Button className="btn-round" color="neutral" type="button" outline>
-              Download
-            </Button> */}
           </div>
         </Container>
       </div>

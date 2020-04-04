@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
@@ -70,17 +52,18 @@ function ExamplesNavbar() {
     >
       <Container>
         <div className='navbar-translate'>
-          <NavbarBrand data-placement='bottom' to='/' tag={Link}>
+          <NavbarBrand data-placement='bottom' to='/' tag={Link} size='sm'>
             <img
               src={
                 navbarColor
-                  ? require("assets/img/P_text_white.png")
+                  ? require("assets/img/P_text.png")
                   : require("assets/img/P_text_red.png")
               }
               alt=''
-              width='120'
+              width='160'
               height='80'
-              className='d-inline-block align-top mr0 p0 '
+              className='d-inline-block align-top mr0 p0'
+              style={{ margin: "-1.5rem" }}
             />
           </NavbarBrand>
           <button
@@ -103,18 +86,21 @@ function ExamplesNavbar() {
           <Nav navbar>
             <NavItem>
               <NavLink href='#services'>
-                <i className='nc-icon nc-layout-11' /> Services
+                <i className='nc-icon nc-layout-11 text-muted' />{" "}
+                <span className='text-muted'>Services</span>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href='#practicos'>
-                <i className='nc-icon nc-book-bookmark' /> Practicos
+                <i className='nc-icon nc-layout-11 text-muted' />{" "}
+                <span className='text-muted'>Practicos</span>
               </NavLink>
             </NavItem>
 
             <NavItem>
               <NavLink href='#contact'>
-                <i className='nc-icon nc-book-bookmark' /> Contact
+                <i className='nc-icon nc-layout-11 text-muted' />{" "}
+                <span className='text-muted'>Contact</span>
               </NavLink>
             </NavItem>
           </Nav>

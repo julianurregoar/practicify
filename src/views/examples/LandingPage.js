@@ -17,7 +17,7 @@
 
 */
 import React from "react";
-
+import { Link } from "react-dom";
 // reactstrap components
 import {
   Button,
@@ -32,13 +32,21 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
+  ListGroup,
+  ListGroupItem
 } from "reactstrap";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
+import SectionNucleoIcons from "views/index-sections/SectionNucleoIcons";
+
+const obj = {
+  topic: "Marketing",
+  price: 20
+};
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -54,105 +62,112 @@ function LandingPage() {
       <ExamplesNavbar />
       <LandingPageHeader />
       <div className='main'>
-        <div className='section text-center' id='services'>
-          <Container>
-            <Row>
-              <Col className='ml-auto mr-auto' md='8'>
-                <h2 className='title'>Services</h2>
-                <h5 className='description'>
-                  We believe that the results come according to the time you
-                  dedicate to do it.{" "}
-                  <strong>
-                    Therefore, all of our courses and experiences have practice
-                    exercises.
-                  </strong>
-                </h5>
-                <br />
-                <Button
+        <div className='text-center' id='services'>
+          <SectionNucleoIcons />
+
+          <div className='section section-gray'>
+            <Container>
+              <Row>
+                <Col className='ml-auto mr-auto' md='8'>
+                  <h2 className='title'>How it works?</h2>
+                  <h5 className='description'>it's easy and practical.</h5>
+                  <br />
+                  {/* <Button
                   className='btn-round'
                   color='info'
                   href='#practicos'
                   onClick={e => e.preventDefault()}
                 >
                   See Details
-                </Button>
-              </Col>
-            </Row>
-            <br />
-            <br />
-            <Row>
-              <Col md='12'>
-                <div className='info'>
-                  <div className='icon icon-info'>
-                    <i className='nc-icon nc-album-2' />
-                  </div>
-                  <div className='description'>
-                    <h4 className='info-title'>Spanish Conversation</h4>
-                    <p className='description'>
-                      You can choose what type of practice you want to improve
-                      your knowledges.
-                    </p>
-                    <Button className='btn-link' color='info' href='#julian'>
+                </Button> */}
+                </Col>
+              </Row>
+              <br />
+              <br />
+              <Row>
+                <Col md='3'>
+                  <div className='info'>
+                    <div className='icon icon-info'>
+                      <i className='nc-icon nc-circle-10' />
+                    </div>
+                    <div className='description'>
+                      <h4 className='info-title'>Choose a Practico</h4>
+
+                      <p className='description'>
+                        Practico is a person that is going to transfer your
+                        native lenguages with you.
+                      </p>
+                      {/* <Button className='btn-link' color='info' href='#julian'>
                       See more
-                    </Button>
+                    </Button> */}
+                    </div>
                   </div>
-                </div>
-              </Col>
-              {/* <Col md='6'>
-                <div className='info'>
-                  <div className='icon icon-info'>
-                    <i className='nc-icon nc-bulb-63' />
-                  </div>
-                  <div className='description'>
-                    <h4 className='info-title'>New Ideas</h4>
-                    <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
-                    </p>
-                    <Button className='btn-link' color='info' href='#julian'>
+                </Col>
+                <Col md='3'>
+                  <div className='info'>
+                    <div className='icon icon-info'>
+                      <i className='nc-icon nc-favourite-28' />
+                    </div>
+                    <div className='description'>
+                      <h4 className='info-title'>Choose a topic</h4>
+                      <p className='description'>
+                        You can choose what type of topic you want to improve
+                        your knowledges.
+                      </p>
+                      {/* <Button className='btn-link' color='info' href='#julian'>
                       See more
-                    </Button>
+                    </Button> */}
+                    </div>
                   </div>
-                </div>
-              </Col> */}
-              {/* <Col md='3'>
-                <div className='info'>
-                  <div className='icon icon-info'>
-                    <i className='nc-icon nc-chart-bar-32' />
-                  </div>
-                  <div className='description'>
-                    <h4 className='info-title'>Statistics</h4>
-                    <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
-                    </p>
-                    <Button className='btn-link' color='info' href='#julian'>
+                </Col>
+                <Col md='3'>
+                  <div className='info'>
+                    <div className='icon icon-info'>
+                      <i className='nc-icon nc-album-2' />
+                    </div>
+                    <div className='description'>
+                      <h4 className='info-title'>Contact</h4>
+                      <p className='description'>
+                        you agree on the day and time with her/him.
+                      </p>
+                      {/* <Button className='btn-link' color='info' href='#julian'>
                       See more
-                    </Button>
+                    </Button> */}
+                    </div>
                   </div>
-                </div>
-              </Col>
-              <Col md='3'>
-                <div className='info'>
-                  <div className='icon icon-info'>
-                    <i className='nc-icon nc-sun-fog-29' />
-                  </div>
-                  <div className='description'>
-                    <h4 className='info-title'>Delightful design</h4>
-                    <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
-                    </p>
-                    <Button className='btn-link' color='info' href='#julian'>
+                </Col>
+                <Col md='3'>
+                  <div className='info'>
+                    <div className='icon icon-info'>
+                      <i className='nc-icon nc-album-2' />
+                    </div>
+                    <div className='description'>
+                      <h4 className='info-title'>Pay</h4>
+                      <p className='description'>
+                        Pay easy and fast and take your exprience throug of{" "}
+                        <a
+                          href='https://zoom.us/'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          Zoom
+                        </a>
+                      </p>
+                      {/* <Button className='btn-link' color='info' href='#julian'>
                       See more
-                    </Button>
+                    </Button> */}
+                    </div>
                   </div>
-                </div>
-              </Col> */}
-            </Row>
-          </Container>
+                </Col>
+              </Row>
+              <br />
+              <Button className='btn-link' color='info' href='#julian'>
+                Choose a practico
+              </Button>
+            </Container>
+          </div>
         </div>
-        <div className='section section-dark text-center'>
+        <div className='section  text-center'>
           <Container>
             <h2 className='title'>Practicos</h2>
             <Row>
@@ -162,8 +177,18 @@ function LandingPage() {
                     <a href='#julian' onClick={e => e.preventDefault()}>
                       <img
                         alt='...'
+                        className='img-rounded img-responsive'
                         src={require("assets/img/faces/Yo.jpeg")}
                       />
+                      <div className='img-details'>
+                        <div className='author'>
+                          <img
+                            alt='...'
+                            className='img-circle img-no-padding img-responsive'
+                            src={require("assets/img/Col_Flag.png")}
+                          />
+                        </div>
+                      </div>
                     </a>
                   </div>
                   <CardBody>
@@ -171,36 +196,86 @@ function LandingPage() {
                       <div className='author'>
                         <CardTitle tag='h4'>Julian Urrego</CardTitle>
                         <h6 className='card-category'>From Colombia</h6>
-                        <h6 className='card-category'>Spanish Conversation</h6>
+                        <h6>Spanish Conversation</h6>
+                        <h6 className='card-category'>
+                          Second Languages: English
+                        </h6>
                       </div>
                     </a>
                     <p className='card-description text-center'>
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach the heights of your capabilities or make
-                      the money that you want without becoming very good at it.
+                      I have worked in marketing for 5 years, also I am a
+                      full-stack web developer. I hope to have a great
+                      experience with you having an interesting conversation.
+                      Let me know if you have speak about some special.
                     </p>
                   </CardBody>
+                  <div>
+                    <Col md='12'>
+                      <ListGroup>
+                        <h5>Speak us about</h5>
+                        <ListGroupItem className='justify-content-between'>
+                          <Row>
+                            <Col sm='4'>Marketing </Col>
+                            <Col sm='4'>USD$20 / per 40 minutes</Col>
+                            <Col sm='4'>
+                              <Button
+                                className='btn-round mr-1'
+                                color='success'
+                                outline
+                                tag={Link}
+                                href={`https://wa.me/14376884507?text=I'm%20interested%20in%20your%20spanish%20conversation%20about%20marketing`}
+                                size='sm'
+                                target='_blank'
+                                type='button'
+                              >
+                                buy experience
+                              </Button>
+                            </Col>
+                          </Row>
+                        </ListGroupItem>
+                        <ListGroupItem className='justify-content-between'>
+                          <Row>
+                            <Col sm='4'>Entrepernuship </Col>
+                            <Col sm='4'>USD$20 / per 40 minutes</Col>
+                            <Col sm='4'>
+                              <Button
+                                className='btn-round mr-1'
+                                color='success'
+                                outline
+                                size='sm'
+                                type='button'
+                              >
+                                buy experience
+                              </Button>
+                            </Col>
+                          </Row>
+                        </ListGroupItem>
+                        <ListGroupItem className='justify-content-between'>
+                          <Row>
+                            <Col sm='4'>Job interview </Col>
+                            <Col sm='4'>USD$30 / per 40 minutes</Col>
+                            <Col sm='4'>
+                              <Button
+                                className='btn-round mr-1'
+                                color='success'
+                                outline
+                                size='sm'
+                                type='button'
+                              >
+                                buy experience
+                              </Button>
+                            </Col>
+                          </Row>
+                        </ListGroupItem>
+                      </ListGroup>
+                    </Col>
+                  </div>
                   <CardFooter className='text-center'>
                     <Button
-                      className='btn-just-icon btn-neutral'
+                      className='btn-just-icon  ml-1'
                       color='link'
-                      href='#julian'
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className='fa fa-twitter' />
-                    </Button>
-                    <Button
-                      className='btn-just-icon btn-neutral ml-1'
-                      color='link'
-                      href='#julian'
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className='fa fa-google-plus' />
-                    </Button>
-                    <Button
-                      className='btn-just-icon btn-neutral ml-1'
-                      color='link'
-                      href='#julian'
+                      tag={Link}
+                      href='https://www.linkedin.com/in/julian-urrego/?locale=en_US'
                       onClick={e => e.preventDefault()}
                     >
                       <i className='fa fa-linkedin' />
@@ -208,114 +283,10 @@ function LandingPage() {
                   </CardFooter>
                 </Card>
               </Col>
-              {/* <Col md='4'>
-                <Card className='card-profile card-plain'>
-                  <div className='card-avatar'>
-                    <a href='#julian' onClick={e => e.preventDefault()}>
-                      <img
-                        alt='...'
-                        src={require("assets/img/faces/joe-gardner-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href='#julian' onClick={e => e.preventDefault()}>
-                      <div className='author'>
-                        <CardTitle tag='h4'>Sophie West</CardTitle>
-                        <h6 className='card-category'>Designer</h6>
-                      </div>
-                    </a>
-                    <p className='card-description text-center'>
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes an
-                      orchestra to play it.
-                    </p>
-                  </CardBody>
-                  <CardFooter className='text-center'>
-                    <Button
-                      className='btn-just-icon btn-neutral'
-                      color='link'
-                      href='#julian'
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className='fa fa-twitter' />
-                    </Button>
-                    <Button
-                      className='btn-just-icon btn-neutral ml-1'
-                      color='link'
-                      href='#julian'
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className='fa fa-google-plus' />
-                    </Button>
-                    <Button
-                      className='btn-just-icon btn-neutral ml-1'
-                      color='link'
-                      href='#julian'
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className='fa fa-linkedin' />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md='4'>
-                <Card className='card-profile card-plain'>
-                  <div className='card-avatar'>
-                    <a href='#julian' onClick={e => e.preventDefault()}>
-                      <img
-                        alt='...'
-                        src={require("assets/img/faces/erik-lucatero-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href='#julian' onClick={e => e.preventDefault()}>
-                      <div className='author'>
-                        <CardTitle tag='h4'>Robert Orben</CardTitle>
-                        <h6 className='card-category'>Developer</h6>
-                      </div>
-                    </a>
-                    <p className='card-description text-center'>
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
-                    </p>
-                  </CardBody>
-                  <CardFooter className='text-center'>
-                    <Button
-                      className='btn-just-icon btn-neutral'
-                      color='link'
-                      href='#julian'
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className='fa fa-twitter' />
-                    </Button>
-                    <Button
-                      className='btn-just-icon btn-neutral ml-1'
-                      color='link'
-                      href='#julian'
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className='fa fa-google-plus' />
-                    </Button>
-                    <Button
-                      className='btn-just-icon btn-neutral ml-1'
-                      color='link'
-                      href='#julian'
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className='fa fa-linkedin' />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col> */}
             </Row>
           </Container>
         </div>
-        <div className='section landing-section'>
+        <div className='section section-gray landing-section'>
           <Container>
             <Row>
               <Col className='ml-auto mr-auto' md='8'>
