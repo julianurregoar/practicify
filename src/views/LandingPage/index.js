@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 // core components
-import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar";
+import ExamplesNavbar from "../../components/Navbars/Navbar";
 import Header from "./components/Header";
 import DemoFooter from "../../components/Footers/DemoFooter";
 import Why from "./components/Why";
@@ -26,7 +26,7 @@ function LandingPage() {
   });
 
   return (
-    <>
+    <Fragment>
       <ExamplesNavbar />
       <Header />
       <div className='main text-center'>
@@ -36,7 +36,7 @@ function LandingPage() {
         <Contact />
       </div>
       <DemoFooter />
-    </>
+    </Fragment>
   );
 }
 

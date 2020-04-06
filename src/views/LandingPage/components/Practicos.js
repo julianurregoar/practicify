@@ -14,8 +14,6 @@ import {
   ListGroupItem
 } from "reactstrap";
 
-
-
 function Practicos() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -27,7 +25,7 @@ function Practicos() {
 
   return (
     <>
-      <div className='section  text-center'>
+      <div className='section  text-center' id='practicos'>
         <Container>
           <h2 className='title'>Practicos</h2>
           <Row>

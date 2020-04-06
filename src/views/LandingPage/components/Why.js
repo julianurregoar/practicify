@@ -41,7 +41,7 @@ function Why() {
                 </strong>
               </p>
               <br />
-              <Button className='btn-round' color='danger' href='#practicos'>
+              <Button className='btn-round' color='danger' href='#how'>
                 How Works?
               </Button>
               {/* <Button

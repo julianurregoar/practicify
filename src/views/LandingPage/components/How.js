@@ -5,7 +5,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 function How() {
   return (
     <>
-      <div className='text-center' id='services'>
+      <div className='text-center' id='how'>
         <div className='section section-gray'>
           <Container>
             <Row>

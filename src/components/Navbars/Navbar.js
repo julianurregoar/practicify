@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 // reactstrap components
@@ -52,7 +51,8 @@ function ExamplesNavbar() {
     >
       <Container>
         <div className='navbar-translate'>
-          <NavbarBrand data-placement='bottom' to='/' tag={Link} size='sm'>
+          {/* <NavbarBrand data-placement='bottom' to='/' tag={Link} size='sm'> */}
+          <NavbarBrand data-placement='bottom' href='#header' size='sm'>
             <img
               src={
                 navbarColor
@@ -85,9 +85,9 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href='#services'>
+              <NavLink href='#how'>
                 <i className='nc-icon nc-layout-11 text-muted' />{" "}
-                <span className='text-muted'>Services</span>
+                <span className='text-muted'>How it works</span>
               </NavLink>
             </NavItem>
             <NavItem>
