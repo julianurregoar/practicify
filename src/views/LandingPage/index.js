@@ -1,13 +1,10 @@
 import React, { Fragment } from "react";
 
 // core components
-import ExamplesNavbar from "../../components/Navbars/Navbar";
 import Header from "./components/Header";
-import DemoFooter from "../../components/Footers/DemoFooter";
 import Why from "./components/Why";
 import How from "./components/How";
 import Practicos from "./components/Practicos";
-import Contact from "./components/Contact";
 
 // const obj = [
 //   {
@@ -27,15 +24,13 @@ function LandingPage() {
 
   return (
     <Fragment>
-      <ExamplesNavbar />
       <Header />
       <div className='main text-center'>
         <Why />
         <How />
         <Practicos />
-        <Contact />
+        {/* <Contact /> */}
       </div>
-      <DemoFooter />
     </Fragment>
   );
 }

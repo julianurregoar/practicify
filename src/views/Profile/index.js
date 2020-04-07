@@ -35,9 +35,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/Navbar";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
@@ -57,7 +55,6 @@ function ProfilePage() {
   });
   return (
     <>
-      <ExamplesNavbar />
       <ProfilePageHeader />
       <div className='section profile-content'>
         <Container>
@@ -191,7 +188,6 @@ function ProfilePage() {
           </TabContent>
         </Container>
       </div>
-      <DemoFooter />
     </>
   );
 }

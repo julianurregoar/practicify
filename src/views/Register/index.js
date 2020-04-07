@@ -21,9 +21,6 @@ import React from "react";
 // reactstrap components
 import { Button, Card, Form, Input, Container, Row, Col } from "reactstrap";
 
-// core components
-import ExamplesNavbar from "components/Navbars/Navbar";
-
 function RegisterPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -34,7 +31,6 @@ function RegisterPage() {
   });
   return (
     <>
-      <ExamplesNavbar />
       <div
         className='page-header'
         style={{
