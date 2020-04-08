@@ -652,3 +652,13 @@
 .error-field {
   border: 2px solid #77ff65;
 }
+
+.line {
+  border-bottom: 1px solid grey;
+}
+
+.image {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+}

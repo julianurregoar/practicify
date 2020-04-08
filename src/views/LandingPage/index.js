@@ -6,13 +6,6 @@ import Why from "./components/Why";
 import How from "./components/How";
 import Practicos from "./components/Practicos";
 
-// const obj = [
-//   {
-//     topic: "Marketing",
-//     price: 20
-//   }
-// ];
-
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
