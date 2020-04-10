@@ -98,7 +98,7 @@ function NavbarLanding() {
             </NavItem>
 
             <NavItem>
-              <NavLink href='#contact'>
+              <NavLink href='/contact'>
                 <i className='nc-icon nc-layout-11 text-muted' />{" "}
                 <span className='text-muted'>Contact</span>
               </NavLink>

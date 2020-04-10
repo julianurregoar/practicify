@@ -6,12 +6,12 @@ import { NavbarBrand, Navbar, Container } from "reactstrap";
 
 function ExamplesNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  // const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
-  const toggleNavbarCollapse = () => {
-    setNavbarCollapse(!navbarCollapse);
-    document.documentElement.classList.toggle("nav-open");
-  };
+  // const toggleNavbarCollapse = () => {
+  //   setNavbarCollapse(!navbarCollapse);
+  //   document.documentElement.classList.toggle("nav-open");
+  // };
 
   React.useEffect(() => {
     const updateNavbarColor = () => {

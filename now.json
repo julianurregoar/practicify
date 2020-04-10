@@ -1,5 +1,8 @@
 {
   "build": {
-    "env": {}
+    "env": {
+      "REACT_APP_STRIPE_PUBLIC_KEY": "@stripe-public-key",
+      "REACT_APP_URI": "@uri"
+    }
   }
 }

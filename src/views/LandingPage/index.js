@@ -6,7 +6,7 @@ import Why from "./components/Why";
 import How from "./components/How";
 import Practicos from "./components/Practicos";
 
-function LandingPage() {
+const LandingPage = () => {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -26,6 +26,6 @@ function LandingPage() {
       </div>
     </Fragment>
   );
-}
+};
 
 export default LandingPage;

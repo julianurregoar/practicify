@@ -4,6 +4,7 @@ import { createBrowserHistory } from "history";
 
 //Routes
 import Routes from "./Routes";
+require("dotenv-flow").config();
 
 const history = createBrowserHistory();
 
