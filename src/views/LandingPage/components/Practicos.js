@@ -105,7 +105,9 @@ const Practicos = () => {
                                   outline
                                   size='sm'
                                   type='button'
-                                  onClick={() => payments(topic.sku)}
+                                  onClick={() =>
+                                    payments(topic.sku, pract.name, topic.price)
+                                  }
                                 >
                                   buy experience
                                 </Button>

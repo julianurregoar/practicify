@@ -2,7 +2,8 @@
   "build": {
     "env": {
       "REACT_APP_STRIPE_PUBLIC_KEY": "@stripe-public-key",
-      "REACT_APP_URI": "@uri"
+      "REACT_APP_URI": "@uri",
+      "REACT_APP_GOOGLE_ANALYTICS": "@ga-id"
     }
   }
 }
