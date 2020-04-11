@@ -19,7 +19,7 @@ export const users = [
         sku: "sku_H4FUG5gyDnT6nt"
       },
       {
-        topic: "Entrepernurhip",
+        topic: "Entrepreneurship",
         price: 14.9,
         sku: "sku_H4I0mgFYuz7aeP"
       },

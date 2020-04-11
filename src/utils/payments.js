@@ -14,7 +14,7 @@ export const payments = (sku, name, value) => {
         quantity: 1
       }
     ],
-    successUrl: process.env.REACT_APP_URI,
-    cancelUrl: process.env.REACT_APP_URI
+    successUrl: `${process.env.REACT_APP_URI}/thanks`,
+    cancelUrl: `${process.env.REACT_APP_URI}/something-wrong`
   });
 };
