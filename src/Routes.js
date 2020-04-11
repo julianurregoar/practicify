@@ -6,7 +6,14 @@ import RouteWithLayout from "./router/RouteWithLayout";
 import { Main, LayoutLanding } from "./layout";
 
 // Views
-import { LandingPage, Contact, NotFound, Thanks, PaymentError } from "./views";
+import {
+  LandingPage,
+  Contact,
+  NotFound,
+  Thanks,
+  PaymentError,
+  Terms
+} from "./views";
 
 const Routes = () => {
   return (
@@ -36,6 +43,7 @@ const Routes = () => {
         layout={Main}
         component={PaymentError}
       />
+      <RouteWithLayout exact path='/terms' layout={Main} component={Terms} />
       <Redirect
         to={{
           pathname: "/not-found"

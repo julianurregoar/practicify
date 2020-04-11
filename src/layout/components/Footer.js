@@ -30,28 +30,14 @@ function Footer() {
           <nav className='footer-nav'>
             <ul>
               <li>
-                <a
-                  href='https://www.creative-tim.com?ref=pkr-footer'
-                  target='_blank'
-                >
-                  Terms
-                </a>
+                <a href='/terms'>Terms</a>
+              </li>
+
+              <li>
+                <a href='/contact'>Contact</a>
               </li>
               <li>
-                <a
-                  href='http://blog.creative-tim.com/?ref=pkr-footer'
-                  target='_blank'
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href='https://www.creative-tim.com/license?ref=pkr-footer'
-                  target='_blank'
-                >
-                  Licenses
-                </a>
+                <a href='/'>Main Page</a>
               </li>
             </ul>
           </nav>

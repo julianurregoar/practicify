@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-dom";
 
 // reactstrap components
@@ -8,7 +8,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 
 const NotFound = () => {
   return (
-    <>
+    <Fragment>
       <div className='section mr4 '>
         <Container>
           <div className='owner'>
@@ -45,7 +45,7 @@ const NotFound = () => {
           <br />
         </Container>
       </div>
-    </>
+    </Fragment>
   );
 };
 
