@@ -48,8 +48,8 @@ function ExamplesNavbar() {
             <img
               src={
                 navbarColor
-                  ? require("assets/img/P_text.png")
-                  : require("assets/img/P_text_red.png")
+                  ? "https://res.cloudinary.com/practicify/image/upload/v1586731626/Main/P_text_iofvas.png"
+                  : "https://res.cloudinary.com/practicify/image/upload/v1586731552/Main/P_text_red_urx26a.png"
               }
               alt=''
               width='160'

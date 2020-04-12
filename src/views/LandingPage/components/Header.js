@@ -44,7 +44,8 @@ function Header() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/brain.png") + ")"
+          backgroundImage:
+            "url(https://res.cloudinary.com/practicify/image/upload/v1586732275/Main/brain_nogbmk.png)"
         }}
         className='page-header'
         data-parallax={true}
@@ -55,7 +56,9 @@ function Header() {
         <Container>
           <div className='motto text-center '>
             <img
-              src={require("assets/img/logo.png")}
+              src={
+                "https://res.cloudinary.com/practicify/image/upload/v1586732271/Main/logo_laknsx.png"
+              }
               alt=''
               width='120'
               height='120'
@@ -63,7 +66,7 @@ function Header() {
             />
 
             <h2 style={{ color: "black" }}>
-              <strong>Foreing Lenguages Conversation</strong>{" "}
+              <strong>Foreign Languages Conversation</strong>{" "}
             </h2>
             <h3 style={{ color: "black" }}>
               Our goal is to get you from A to B in a fast and practice

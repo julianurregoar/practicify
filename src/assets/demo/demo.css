@@ -662,3 +662,8 @@
   height: 400px;
   object-fit: cover;
 }
+
+.wtsp {
+  background-color: #25d366;
+  border: #25d366;
+}

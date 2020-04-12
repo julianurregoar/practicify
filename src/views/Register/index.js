@@ -34,7 +34,10 @@ function RegisterPage() {
       <div
         className='page-header'
         style={{
-          backgroundImage: "url(" + require("assets/img/login-image.jpg") + ")"
+          backgroundImage:
+            "url(" +
+            "https://res.cloudinary.com/practicify/image/upload/v1586732799/Main/MainPage_pif7w6.jpg" +
+            ")"
         }}
       >
         <div className='filter' />

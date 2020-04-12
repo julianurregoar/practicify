@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { useFormik } from "formik";
+
 import * as Yup from "yup";
 // reactstrap components
 import {
@@ -23,6 +24,15 @@ function Contact() {
     };
   });
 
+  const send = (name, message) => {
+    const url = `https://wa.me/${process.env.REACT_APP_PHONE}?text=Hello,%20I%20am%20${name}%20${message}`;
+    window.open(url, "_blank");
+  };
+
+  const replace = message => {
+    const wtspText = message.replace(/ /g, "%20");
+    return wtspText;
+  };
   const {
     handleSubmit,
     handleChange,
@@ -32,7 +42,7 @@ function Contact() {
     touched
   } = useFormik({
     initialValues: {
-      email: "",
+      // email: "",
       name: "",
       message: ""
     },
@@ -42,13 +52,14 @@ function Contact() {
         .required("Required"),
       message: Yup.string()
         .max(20, "Must be 20 characters or less")
-        .required("Required"),
-      email: Yup.string()
-        .email("Invalid email address")
         .required("Required")
+      // email: Yup.string()
+      //   .email("Invalid email address")
+      //   .required("Required")
     }),
     onSubmit: values => {
-      console.log(values);
+      const m = replace(values.message);
+      send(values.name, m);
     }
   });
 
@@ -82,13 +93,14 @@ function Contact() {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           value={values.name}
+                          invalid={touched.name && errors.name ? true : false}
                         />
                       </InputGroup>
                       {touched.name && errors.name ? (
                         <div className='error-message'>{errors.name}</div>
                       ) : null}
                     </Col>
-                    <Col md='6'>
+                    {/* <Col md='6'>
                       <label>Email</label>
                       <InputGroup
                         className={
@@ -113,7 +125,7 @@ function Contact() {
                       {touched.email && errors.email ? (
                         <div className='error-message'>{errors.email}</div>
                       ) : null}
-                    </Col>
+                    </Col> */}
                   </Row>
                   <label>Message</label>
                   <Input
@@ -128,19 +140,20 @@ function Contact() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.message}
+                    invalid={touched.message && errors.message ? true : false}
                   />
                   {touched.message && errors.message ? (
                     <div className='error-message'>{errors.message}</div>
                   ) : null}
                   <Row>
-                    <Col className='ml-auto mr-auto' md='4'>
+                    <Col className='ml-auto mr-auto' md='8'>
                       <Button
-                        className='btn-fill'
+                        className='btn-fill wtsp'
                         color='danger'
                         size='lg'
                         type='submit'
                       >
-                        Send Message
+                        Send WhatsApp Message
                       </Button>
                     </Col>
                   </Row>

@@ -43,6 +43,12 @@ const Routes = () => {
         layout={Main}
         component={PaymentError}
       />
+      {/* <RouteWithLayout
+        exact
+        path='/register'
+        layout={Main}
+        component={Profile}
+      /> */}
       <RouteWithLayout exact path='/terms' layout={Main} component={Terms} />
       <Redirect
         to={{

@@ -44,13 +44,13 @@ function ProfilePageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/fabio-mangione.jpg") + ")"
+            "url(https://res.cloudinary.com/practicify/image/upload/v1586732799/Main/MainPage_pif7w6.jpg"
         }}
-        className="page-header page-header-xs"
+        className='page-header page-header-xs'
         data-parallax={true}
         ref={pageHeader}
       >
-        <div className="filter" />
+        <div className='filter' />
       </div>
     </>
   );
