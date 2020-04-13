@@ -1,7 +1,7 @@
 import { gaEvent } from "marketing/gAnalytics";
 
 export const payments = (sku, name, value) => {
-  const stripe = window.Stripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+  const stripe = window.Stripe(process.env.REACT_APP_STRIPE_KEY);
   gaEvent(`Practico ${name}`, "Click Buy", sku, value);
 
   stripe.redirectToCheckout({

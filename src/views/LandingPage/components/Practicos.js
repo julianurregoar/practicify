@@ -119,6 +119,7 @@ const Practicos = () => {
                     </Col>
                   </div>
                   <CardFooter className='text-center line'>
+                    <h5>each experience lasts 40 minutes</h5>
                     <Button
                       className='btn-just-icon  ml-1'
                       color='link'

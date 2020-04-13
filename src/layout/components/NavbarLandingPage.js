@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import classnames from "classnames";
 // reactstrap components
 import {
@@ -51,7 +50,13 @@ function NavbarLanding() {
     >
       <Container>
         <div className='navbar-translate'>
-          <NavbarBrand data-placement='bottom' to='/' tag={Link} size='sm'>
+          <NavbarBrand
+            data-placement='bottom'
+            // to='/'
+            // tag={Link}
+            size='sm'
+            href='#header'
+          >
             {/* <NavbarBrand data-placement='bottom' href='#header' size='sm'> */}
             <img
               src={

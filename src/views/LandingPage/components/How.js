@@ -94,7 +94,7 @@ function How() {
               </Col>
             </Row>
             <br />
-            <Button className='btn-link' color='info' href='#julian'>
+            <Button className='btn-link' color='info' href='#practicos'>
               Choose a practico
             </Button>
           </Container>

@@ -17,17 +17,17 @@ export const users = [
       {
         topic: "Marketing",
         price: 14.99,
-        sku: "sku_H4FUG5gyDnT6nt"
+        sku: "sku_H5QW48XOOz1IX8"
       },
       {
         topic: "Entrepreneurship",
         price: 14.99,
-        sku: "sku_H4I0mgFYuz7aeP"
+        sku: "sku_H5QWH6x9GVDf6Z"
       },
       {
         topic: "Sapiens (Book)",
         price: 14.99,
-        sku: "sku_H4I3I1Xg4ozcYa"
+        sku: "sku_H5QXS8b7Lz2045"
       }
     ]
   },
@@ -46,18 +46,18 @@ export const users = [
       {
         topic: "Fitness",
         price: 14.99,
-        sku: "sku_H4I6VOoXtByLps"
+        sku: "sku_H5QVgjSK7pL865"
       },
 
       {
         topic: "Soccer",
         price: 14.99,
-        sku: "sku_H4I7KmyAqZkzwB"
+        sku: "sku_H5QU21daMU9zaW"
       },
       {
         topic: "Life in a new country",
         price: 14.99,
-        sku: "sku_H4I8rFl03Bo5VJ"
+        sku: "sku_H5QV4P4Z4ijiPu"
       }
     ]
   }
