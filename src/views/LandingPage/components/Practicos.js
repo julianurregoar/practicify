@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-dom";
+import { Link } from "react-router-dom";
 import { payments } from "../../../utils/payments";
+import { calendly } from "../../../utils/calendly";
 import { users } from "../../../utils/users";
-
 // reactstrap components
 import {
   Button,
@@ -14,8 +14,12 @@ import {
   Row,
   Col,
   ListGroup,
-  ListGroupItem
+  ListGroupItem,
+  CardImg,
+  CardText,
+  Badge
 } from "reactstrap";
+import useQueryString from "utils/useQueryString";
 
 const Practicos = () => {
   document.documentElement.classList.remove("nav-open");
@@ -27,42 +31,47 @@ const Practicos = () => {
     };
   });
 
+  const [value, onSetValue] = useQueryString("topic");
+  const [schedule, setSchedule] = useQueryString("_date");
+
+  const book = topic => {
+    onSetValue(topic);
+    setSchedule(true);
+  };
   return (
     <>
       <div className='section  text-center' id='practicos'>
         <Container>
-          <h2 className='title'>Practicos</h2>
+          <h2 className='title' style={{}}>
+            Practicos
+          </h2>
           <Row>
             {users.map(pract => (
               <Col md='6'>
-                <Card className='card-profile card-plain'>
+                <Card>
                   <div
                     className='card-avatar'
                     id='practicos'
                     key={pract.topics}
                   >
-                    <a href='#julian' onClick={e => e.preventDefault()}>
-                      <img
-                        alt='...'
-                        className='img-rounded img-responsive'
-                        src={pract.img}
-                      />
-                      <div className='img-details'>
-                        <div className='author'>
-                          <img
-                            alt='...'
-                            className='img-circle img-no-padding img-responsive'
-                            src={require("assets/img/Col_Flag.png")}
-                          />
-                        </div>
+                    <CardImg top src={pract.img} alt='...' />
+                    <div className='img-details'>
+                      <div className='author'>
+                        <img
+                          alt='...'
+                          className='img-circle img-no-padding img-responsive'
+                          src={require("assets/img/Col_Flag.png")}
+                        />
                       </div>
-                    </a>
+                    </div>
                   </div>
+
                   <CardBody>
                     <a href='#julian' onClick={e => e.preventDefault()}>
                       <div className='author'>
                         <CardTitle tag='h4'>{pract.name}</CardTitle>
                         <h6 className='card-category'>
+                          <br />
                           From {pract.native_country}
                         </h6>
                         <h6>{pract.conversation} Conversation</h6>
@@ -71,53 +80,76 @@ const Practicos = () => {
                         </h6>
                       </div>
                     </a>
-                    <p className='card-description text-center'>
-                      {pract.description}
-                    </p>
-                    <span className='mr-3 mr4'>
-                      <Button
-                        className='btn-round '
-                        color='primary'
-                        outline
-                        tag={Link}
-                        href={`https://wa.me/${pract.phone_number}?text=Hello!%20${pract.name},%20I'm%20interested%20in%20your%20spanish%20conversation.%20`}
-                        size='sm'
-                        target='_blank'
-                        type='button'
-                      >
-                        Contact
-                      </Button>
-                    </span>
-                  </CardBody>
-                  <div>
-                    <Col md='12'>
-                      <ListGroup>
+                    <br />
+                    <div>
+                      <CardText>{pract.description}</CardText>
+                    </div>
+                    <div
+                      style={{
+                        position: "relative",
+                        margin: "1rem -15px",
+                        borderWwidth: ".2rem 0 0"
+                      }}
+                    >
+                      <Col xs='12'>
+                        {/* <ListGroupItem> */}
                         <h5>Talk us about</h5>
-                        {pract.topics.map(topic => (
-                          <ListGroupItem className='justify-content-between'>
-                            <Row key={topic.sku}>
-                              <Col sm='3'>{topic.topic} </Col>
-                              <Col sm='3'>CAD$ {topic.price}</Col>
-                              <Col sm='5'>
-                                <Button
-                                  className='btn-round '
-                                  color='success'
-                                  outline
-                                  size='sm'
-                                  type='button'
-                                  onClick={() =>
-                                    payments(topic.sku, pract.name, topic.price)
-                                  }
-                                >
-                                  buy experience
-                                </Button>
-                              </Col>
-                            </Row>
-                          </ListGroupItem>
-                        ))}
-                      </ListGroup>
-                    </Col>
-                  </div>
+
+                        <Row>
+                          {pract.topics.map(topic => (
+                            <Badge
+                              // onClick={() => book(topic.topic)}
+                              style={{
+                                margin: "2px",
+                                position: "center",
+                                backgroundColor: "#b0d8da",
+                                color: "black"
+                              }}
+                            >
+                              {topic.topic}
+                            </Badge>
+                          ))}
+                        </Row>
+
+                        {/* </ListGroup> */}
+                      </Col>
+                    </div>
+                    <div>
+                      <h4>
+                        <strong>CAD $9.99</strong>{" "}
+                      </h4>
+                    </div>
+                    <br />
+                    <Row>
+                      <Col sm='6'>
+                        <span className='mr-3 mr4'>
+                          <Button
+                            color='info'
+                            size='md'
+                            target='_blank'
+                            type='button'
+                            onClick={() => calendly()}
+                          >
+                            shedule experience
+                          </Button>
+                        </span>
+                      </Col>
+                      <Col sm='6'>
+                        <span className='mr-3 mr4'>
+                          <Button
+                            color='success'
+                            onClick={() => payments("sku_H5kRp9urDHzPsx")}
+                            size='md'
+                            target='_blank'
+                            type='button'
+                          >
+                            pay experience
+                          </Button>
+                        </span>
+                      </Col>
+                    </Row>
+                  </CardBody>
+
                   <CardFooter className='text-center line'>
                     <h5>each experience lasts 40 minutes</h5>
                     <Button

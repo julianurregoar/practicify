@@ -52,7 +52,7 @@ const Routes = () => {
       <RouteWithLayout exact path='/terms' layout={Main} component={Terms} />
       <Redirect
         to={{
-          pathname: "/not-found"
+          pathname: "/"
         }}
       />
     </Switch>

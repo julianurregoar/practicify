@@ -4,6 +4,7 @@ export const users = [
     native_country: "Colombia",
     phone_number: "14376884507",
     linkedIn: "https://www.linkedin.com/in/julian-urrego/?locale=en_US",
+    calendly: "https://calendly.com/julian-urrego/spanish-conversation",
     flag: require("assets/img/Col_Flag.png"),
     img:
       "https://res.cloudinary.com/practicify/image/upload/v1586732241/Main/Yo_mopbuu.jpg",
@@ -14,6 +15,11 @@ export const users = [
     conversation: "Spanish",
     second_lenguages: "English",
     topics: [
+      {
+        topic: "Free conversarion",
+        price: 14.99,
+        sku: "sku_H5kRp9urDHzPsx"
+      },
       {
         topic: "Marketing",
         price: 14.99,
@@ -36,6 +42,7 @@ export const users = [
     native_country: "Colombia",
     phone_number: "16474002662",
     linkedIn: "https://www.linkedin.com/in/andres-perez-diaz/",
+    calendly: "https://calendly.com/julian-urrego/spanish-conversation",
     flag: require("assets/img/Col_Flag.png"),
     img:
       "https://res.cloudinary.com/practicify/image/upload/v1586732241/Main/andres_ud9bkm.jpg",
@@ -43,6 +50,11 @@ export const users = [
     conversation: "Spanish",
     second_lenguages: "English and Portuguese",
     topics: [
+      {
+        topic: "Free conversarion",
+        price: 14.99,
+        sku: "sku_H5kRystv0TDfZB"
+      },
       {
         topic: "Fitness",
         price: 14.99,

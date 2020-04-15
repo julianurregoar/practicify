@@ -41,6 +41,13 @@
   .card-plain .card-title {
     color: $white-color !important;
   }
+  /* Inline #4 | http://localhost:3000/?%3F%3F%3F%3F%3F%3F%3Ftopic=Free%20conversarion&_date=true&topic=Sapiens%20%28Book%29 */
+
+  .card .card-body .card-title {
+    /* margin: 5px 0 0 0; */
+    margin: 5px;
+  }
+
   .category,
   .description,
   .card-plain .card-description,

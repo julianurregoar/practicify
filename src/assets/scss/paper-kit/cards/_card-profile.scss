@@ -25,6 +25,8 @@
     margin: -60px auto 0;
     border-radius: 50%;
     overflow: hidden;
+    margin: 5px;
+    /* Inline #4 | http://localhost:3000/?%3F%3F%3F%3F%3F%3F%3Ftopic=Free%20conversarion&_date=true&topic=Sapiens%20%28Book%29 */
 
     &.border-white {
       border: 4px solid $white-color;

@@ -11,6 +11,8 @@
     "moment": "2.24.0",
     "node-sass": "4.12.0",
     "nouislider": "13.1.5",
+    "qs": "^6.9.3",
+    "query-string": "^6.12.1",
     "react": "16.8.6",
     "react-bootstrap-switch": "15.5.3",
     "react-datetime": "2.16.3",
